@@ -5,6 +5,122 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cosi Azure", sans-serif;
+  font-family: "Cosi Azure";
   src: url(./assets/fonts/CosiAzure-Bold.ttf);
+}
+
+:root {
+  --color-dark: #050505;
+  --color-light: #f7f7ff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: "Michroma", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
+}
+
+.app {
+  position: relative;
+}
+
+.noise {
+  background-image: url("./assets/images/noise.gif");
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.05;
+  z-index: -999;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item::after {
+  content: "";
+  background-color: var(--color-light);
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.shutter {
+  position: absolute;
+  z-index: 100;
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 6rem;
+}
+
+.shutter-left {
+  top: 0;
+  left: 0;
+}
+
+.shutter-right {
+  bottom: 0;
+  right: 0;
+}
+
+.circle-left,
+.circle-right {
+  width: 700px;
+  height: 700px;
+  border: 1px dashed var(--color-light);
+  opacity: 0.3;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -990;
+  animation: spin 90s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-left {
+  top: -40%;
+  left: -20%;
+}
+
+.circle-right {
+  bottom: -40%;
+  right: -20%;
 }
