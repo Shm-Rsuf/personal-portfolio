@@ -101,7 +101,7 @@ body {
 .circle-right {
   width: 700px;
   height: 700px;
-  border: 1px dashed var(--color-light);
+  border: 0.15rem dashed var(--color-light);
   opacity: 0.3;
   border-radius: 50%;
   position: fixed;
