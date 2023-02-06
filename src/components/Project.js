@@ -15,7 +15,7 @@ const Project = ({ project }) => {
           {project.title}
         </h3>
         <p className="text-white/75">{project.description}</p>
-        <span className="text-cyan-400 flex gap-4 flex-wrap leading-none">
+        <span className="text-cyan-400 flex gap-5 flex-wrap leading-none">
           {project.tools.map((tool, i) => (
             <span key={i}>{tool}</span>
           ))}
