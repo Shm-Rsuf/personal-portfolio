@@ -1,3 +1,4 @@
+import About from "./About";
 import Bio from "./Bio";
 import Hero from "./Hero";
 import Projects from "./Projects";
@@ -10,6 +11,7 @@ const Home = () => {
       <Bio />
       <Projects />
       <Skills />
+      <About />
     </div>
   );
 };
