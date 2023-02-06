@@ -74,7 +74,8 @@ body {
   position: relative;
 }
 
-.hero-img {
+.hero-img,
+.project-right {
   width: 350px;
   height: 350px;
   overflow: hidden;
@@ -123,4 +124,10 @@ body {
 .circle-right {
   bottom: -40%;
   right: -20%;
+}
+
+.projects-section-title {
+  font-family: "Cosi Azure";
+  font-size: 6rem;
+  line-height: 1;
 }
