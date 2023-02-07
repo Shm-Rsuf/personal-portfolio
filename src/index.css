@@ -33,6 +33,11 @@ body {
   word-spacing: 2.5px;
 }
 
+input[type="submit"] {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
 .app {
   position: relative;
 }
