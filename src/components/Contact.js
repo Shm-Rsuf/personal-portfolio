@@ -1,37 +1,51 @@
 import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
+  const sendEmailHandler = (e) => {
+    e.preventDefault();
+
+    //emailJs integration
+
+    //reset value
+    e.target.querySelector(".fullname").value = "";
+    e.target.querySelector(".email").value = "";
+    e.target.querySelector(".message").value = "";
+  };
+
   return (
     <div className="contact container mx-auto mt-40" id="contact">
       <SectionTitle title={"Let's Talk"} />
 
-      <form className="mt-40 grid grid-cols-2 gap-20">
-        <div className="form-control overflow-hidden">
+      <form
+        onSubmit={sendEmailHandler}
+        className="mt-40 grid grid-cols-2 gap-20"
+      >
+        <div className=" form-control overflow-hidden">
           <input
             type="text"
             placeholder="write your name"
             name="fullname"
             required
-            className="bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full"
+            className="fullname bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full"
           />
         </div>
-        <div className="form-control overflow-hidden">
+        <div className=" form-control overflow-hidden">
           <input
             type="email"
             placeholder="write your email"
             name="email"
             required
-            className="bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full"
+            className="email bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full"
           />
         </div>
-        <div className="form-control overflow-hidden">
+        <div className=" form-control overflow-hidden">
           <textarea
             placeholder="write your message"
             name="message"
             required
             rows="1"
             cols="30"
-            className="bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full resize-none"
+            className="message bg-transparent py-8 px-16 border border-white/20 outline-none rounded-full focus:border-cyan-400 duration-500 w-full resize-none"
           />
         </div>
         <div className="form-control overflow-hidden">
