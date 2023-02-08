@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { useGsapSkillItemReveal, useGsapSkillTextReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
 
 const data = [
@@ -15,6 +17,17 @@ const data = [
   { id: 12, title: "Firebase" },
 ];
 const Skills = () => {
+  const skillItemRef = useRef([]);
+  const skillItem2Ref = useRef([]);
+  const skillTextRef = useRef([]);
+  const skillText2Ref = useRef([]);
+
+  useGsapSkillItemReveal(skillItemRef.current);
+  useGsapSkillItemReveal(skillItem2Ref.current);
+
+  useGsapSkillTextReveal(skillTextRef.current);
+  useGsapSkillTextReveal(skillText2Ref.current);
+
   return (
     <div className="skills container mx-auto mt-40" id="skills">
       <SectionTitle title={"My Skills"} />
@@ -26,8 +39,12 @@ const Skills = () => {
               <li
                 key={skill.id}
                 className="skill-itme container overflow-hidden"
+                ref={(el) => (skillItemRef.current[i] = el)}
               >
-                <div className="flex gap-5 items-baseline">
+                <div
+                  className="flex gap-5 items-baseline"
+                  ref={(el) => (skillTextRef.current[i] = el)}
+                >
                   <span className="skill-number text-white/50">
                     {String(skill.id).padStart(2, 0).padEnd(3, ".")}
                   </span>
@@ -43,8 +60,12 @@ const Skills = () => {
               <li
                 key={skill.id}
                 className="skill-itme container overflow-hidden"
+                ref={(el) => (skillItem2Ref.current[i] = el)}
               >
-                <div className="flex gap-5 items-baseline">
+                <div
+                  className="flex gap-5 items-baseline"
+                  ref={(el) => (skillText2Ref.current[i] = el)}
+                >
                   <span className="skill-number text-white/50">
                     {String(skill.id).padStart(2, 0).padEnd(3, ".")}
                   </span>

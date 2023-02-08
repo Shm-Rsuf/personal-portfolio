@@ -214,8 +214,13 @@ input[type="submit"] {
 }
 
 .skill-itme::before {
-  width: 100%;
+  width: 0%;
   opacity: 0.2;
+  transition: 1.5s;
+}
+
+.skill-itme.reveal::before {
+  width: 100%;
 }
 
 .skill-itme::after {

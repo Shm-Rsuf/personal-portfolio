@@ -159,3 +159,58 @@ export const useGsapInputReveal = (items, delay = 0) => {
     );
   }, [items, delay]);
 };
+
+export const useGsapSkillItemReveal = (items) => {
+  useEffect(() => {
+    items.forEach((el) =>
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          onEnter() {
+            el.classList.add("reveal");
+          },
+        },
+      })
+    );
+  }, [items]);
+};
+
+export const useGsapSkillTextReveal = (el) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el,
+      {
+        y: 500,
+      },
+      {
+        y: 0,
+        duration: 1.5,
+        ease: "power4.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [el]);
+};
+
+export const useGsapFooterReveal = (el) => {
+  useEffect(() => {
+    gsap.fromTo(
+      el.current,
+      {
+        y: -200,
+      },
+      {
+        y: 0,
+        duration: 1,
+        ease: "power4.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: el.current,
+        },
+      }
+    );
+  }, [el]);
+};
