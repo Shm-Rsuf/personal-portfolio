@@ -1,6 +1,16 @@
+import { useRef } from "react";
+import { useGsapInputReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
+  const input1Ref = useRef(null);
+  const input2Ref = useRef(null);
+  const input3Ref = useRef(null);
+  const input4Ref = useRef(null);
+  const inputArr = [input1Ref, input2Ref, input3Ref, input4Ref];
+
+  useGsapInputReveal(inputArr);
+
   const sendEmailHandler = (e) => {
     e.preventDefault();
 
@@ -22,6 +32,7 @@ const Contact = () => {
       >
         <div className=" form-control overflow-hidden">
           <input
+            ref={input1Ref}
             type="text"
             placeholder="write your name"
             name="fullname"
@@ -31,6 +42,7 @@ const Contact = () => {
         </div>
         <div className=" form-control overflow-hidden">
           <input
+            ref={input2Ref}
             type="email"
             placeholder="write your email"
             name="email"
@@ -40,6 +52,7 @@ const Contact = () => {
         </div>
         <div className=" form-control overflow-hidden">
           <textarea
+            ref={input3Ref}
             placeholder="write your message"
             name="message"
             required
@@ -50,6 +63,7 @@ const Contact = () => {
         </div>
         <div className="form-control overflow-hidden">
           <input
+            ref={input4Ref}
             type="submit"
             value="send message"
             className=" py-8 px-16 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500 w-full uppercase cursor-pointer"

@@ -115,3 +115,47 @@ export const useGsapSectionTitleReveal = (el, delay = 0) => {
     );
   }, [el, delay]);
 };
+
+export const useGsapProjectLeftRightReveal = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+    gsap.fromTo(
+      el,
+      {
+        y: 500,
+      },
+      {
+        y: 0,
+        duration: 2,
+        delay,
+        ease: "power4.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [items, delay]);
+};
+
+export const useGsapInputReveal = (items, delay = 0) => {
+  useEffect(() => {
+    const el = items.map((item) => item.current);
+    gsap.fromTo(
+      el,
+      {
+        y: 500,
+      },
+      {
+        y: 0,
+        duration: 2,
+        delay,
+        ease: "power4.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, [items, delay]);
+};

@@ -1,13 +1,21 @@
 import { useRef } from "react";
+import { useGsapProjectLeftRightReveal } from "../hooks/gsap";
 import { useHoverEffect } from "../hooks/useHoverEffect";
 
 const Project = ({ project }) => {
+  const projectLeftRef = useRef(null);
   const projectRightRef = useRef(null);
+  const projectArr = [projectLeftRef, projectRightRef];
+
   useHoverEffect(projectRightRef, project.img1, project.img2);
+  useGsapProjectLeftRightReveal(projectArr);
 
   return (
-    <div className="project grid grid-cols-5">
-      <div className="project-left col-span-3 flex flex-col gap-8">
+    <div className="project grid grid-cols-5 overflow-hidden">
+      <div
+        className="project-left col-span-3 flex flex-col gap-8"
+        ref={projectLeftRef}
+      >
         <span className="text-7xl text-white/50">
           {String(project.id).padStart(2, 0)}
         </span>

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useHoverEffect } from "../hooks/useHoverEffect";
+import { useGsapProjectLeftRightReveal } from "../hooks/gsap";
 
 const data = {
   img1: "https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -9,8 +10,11 @@ const data = {
 
 const About = () => {
   const aboutLeftRef = useRef(null);
+  const aboutRightRef = useRef(null);
+  const aboutArr = [aboutLeftRef, aboutRightRef];
 
   useHoverEffect(aboutLeftRef, data.img1, data.img2);
+  useGsapProjectLeftRightReveal(aboutArr);
 
   return (
     <div className="container mx-auto mt-40" id="about">
@@ -18,7 +22,7 @@ const About = () => {
 
       <div className="about-wrapper mt-40 grid grid-cols-2 gap-20 overflow-hidden">
         <div className="about-left" ref={aboutLeftRef}></div>
-        <div className="about-right">
+        <div className="about-right" ref={aboutRightRef}>
           <p>
             I am a Front-End-Developer specializing in React, Tailwind CSS,
             Redux, responsive design, JavaScript, and React Router would be
