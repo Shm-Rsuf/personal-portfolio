@@ -32,7 +32,7 @@ const About = () => {
             and implement responsive layouts.
           </p>
           <p className="mt-10">
-            Additionally, I would have a strong understanding of JavaScript and
+            Additionally, I would have a strong understanding of javaScript and
             be able to write high-quality code using React. My passion for
             delivering exceptional user experiences, combined with my technical
             skills, make me a valuable asset to any development team.
