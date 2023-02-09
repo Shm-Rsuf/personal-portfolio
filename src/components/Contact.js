@@ -1,8 +1,10 @@
 import { useRef } from "react";
 import { useGsapInputReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef(null);
   const input1Ref = useRef(null);
   const input2Ref = useRef(null);
   const input3Ref = useRef(null);
@@ -15,6 +17,21 @@ const Contact = () => {
     e.preventDefault();
 
     //emailJs integration
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_ID
+      )
+      .then(
+        () => {
+          console.log("message sent");
+        },
+        () => {
+          console.log("message not sent");
+        }
+      );
 
     //reset value
     e.target.querySelector(".fullname").value = "";
@@ -29,6 +46,7 @@ const Contact = () => {
       <form
         onSubmit={sendEmailHandler}
         className="mt-40 grid grid-cols-2 gap-20"
+        ref={formRef}
       >
         <div className=" form-control overflow-hidden">
           <input
