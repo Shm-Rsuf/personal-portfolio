@@ -4,8 +4,8 @@ const data = [
   {
     id: 1,
     title: "Tech Alpha - About a modern e-commerce website",
-    img1: "https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&w=600",
-    img2: "https://images.pexels.com/photos/2586353/pexels-photo-2586353.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img1: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675924858/personal-portfolio/tech-alpha-1_rfrwxq.png",
+    img2: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675924857/personal-portfolio/tech-alpha-2_b36mvb.png",
     description:
       "A modern e-commerce website built with React, Redux, TailwindCSS, Redux Thunk, and Redux Toolkit. Features product listing, filtering, checkout and seamless shopping experience. Async actions handled by Redux Thunk and state management made easy with Redux Toolkit.",
     tools: [
@@ -16,15 +16,15 @@ const data = [
       "redux-toolkit",
       "GSAP",
     ],
-    liveLink: "https://www.google.com/",
-    frontEndLink: "https://www.google.com/",
+    liveLink: "https://tech-alpha-a3.netlify.app/",
+    frontEndLink: "https://github.com/Shm-Rsuf/tech-alpha-a3",
     backEndLink: "https://www.google.com/",
   },
   {
     id: 2,
     title: "Foodverse - A modern food delivery online e-commerce website",
-    img1: "https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&w=600",
-    img2: "https://images.pexels.com/photos/2586353/pexels-photo-2586353.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img1: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675923002/personal-portfolio/food-verse-1_si6no3.png",
+    img2: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675923756/personal-portfolio/food-verse-2_awuupw.png",
     description:
       "A modern online food delivery e-commerce website built with React, Redux, TailwindCSS, Redux Thunk, and Redux Toolkit. Features product listing, filtering, checkout and seamless shopping experience. Async actions handled by Redux Thunk and state management made easy with Redux Toolkit.",
     tools: [
@@ -36,8 +36,19 @@ const data = [
       "redux-toolkit",
       "GSAP",
     ],
-    liveLink: "https://www.google.com/",
-    frontEndLink: "https://www.google.com/",
+    liveLink: "https://foodverse-a3.netlify.app/",
+    frontEndLink: "https://github.com/Shm-Rsuf/foodverse",
+  },
+  {
+    id: 3,
+    title: "Tera-Guard - Your security meets our priority",
+    img1: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675924855/personal-portfolio/tera-one_wzqjb8.png",
+    img2: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675924855/personal-portfolio/tera-two_qkjisk.png",
+    description:
+      "A modern online food delivery e-commerce website built with React, Redux, TailwindCSS, Redux Thunk, and Redux Toolkit. Features product listing, filtering, checkout and seamless shopping experience. Async actions handled by Redux Thunk and state management made easy with Redux Toolkit.",
+    tools: ["HTML", "CSS", "Bootstrap", "JavaScript", "react", "GSAP"],
+    liveLink: "https://tera-guard-app.netlify.app/",
+    frontEndLink: "https://github.com/Shm-Rsuf/tera-gurad-project",
   },
 ];
 

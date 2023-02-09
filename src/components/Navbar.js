@@ -30,7 +30,7 @@ const Navbar = ({ footerNav }) => {
     >
       <div>
         <HashLink smooth to="#home" className="link-item" ref={link1Ref}>
-          {footerNav ? "Go To Top" : "Shah Md. Usuf"}
+          {footerNav ? "Go To Top" : "Usuf Ali"}
         </HashLink>
       </div>
       <ul className="links flex flex-col gap-2">
@@ -61,7 +61,7 @@ const Navbar = ({ footerNav }) => {
         </li>
         <li>
           <a
-            href="http://google.com"
+            href="https://docs.google.com/document/d/1999X1u2dC9h4B2nlhbC0rBL_1y55aK_aSdfTTvsAwHQ/edit"
             target="_blank"
             rel="noopener noreferrer"
             className="link-item"

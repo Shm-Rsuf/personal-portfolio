@@ -4,8 +4,8 @@ import { useHoverEffect } from "../hooks/useHoverEffect";
 import { useGsapProjectLeftRightReveal } from "../hooks/gsap";
 
 const data = {
-  img1: "https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&w=600",
-  img2: "https://images.pexels.com/photos/2586353/pexels-photo-2586353.jpeg?auto=compress&cs=tinysrgb&w=600",
+  img1: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675931938/cover1_vtesoo.jpg",
+  img2: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675922789/personal-portfolio/dpImg_epp9qb.jpg",
 };
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
             skills, make me a valuable asset to any development team.
           </p>
           <a
-            href={"https://www.google.com/"}
+            href="https://docs.google.com/document/d/1999X1u2dC9h4B2nlhbC0rBL_1y55aK_aSdfTTvsAwHQ/edit"
             target="_blank"
             rel="noopener noreferrer"
             className="uppercase py-4 px-8 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-50/20 duration-500 inline-block mt-10"

@@ -15,7 +15,7 @@ const Footer = () => {
           to="#home"
           className="link-item hover:text-white duration-500"
         >
-          Shah Md. Usuf
+          Usuf Ali
         </HashLink>
         . Crafted by yours truly
       </p>

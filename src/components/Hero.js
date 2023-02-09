@@ -3,8 +3,8 @@ import { useGsapHeroImgReveal, useGsapHeadLineReveal } from "../hooks/gsap";
 import { useHoverEffect } from "../hooks/useHoverEffect";
 
 const data = {
-  img1: "https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&w=600",
-  img2: "https://images.pexels.com/photos/2586353/pexels-photo-2586353.jpeg?auto=compress&cs=tinysrgb&w=600",
+  img1: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675931938/cover1_vtesoo.jpg",
+  img2: "https://res.cloudinary.com/dlc8v0etj/image/upload/v1675922789/personal-portfolio/dpImg_epp9qb.jpg",
 };
 
 const Hero = () => {
