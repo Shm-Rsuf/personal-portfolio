@@ -18,7 +18,6 @@ const data = [
     ],
     liveLink: "https://tech-alpha-a3.netlify.app/",
     frontEndLink: "https://github.com/Shm-Rsuf/tech-alpha-a3",
-    backEndLink: "https://www.google.com/",
   },
   {
     id: 2,
@@ -56,8 +55,9 @@ const data = [
       "postman",
       "context-api",
     ],
-    liveLink: "https://tera-guard-app.netlify.app/",
-    frontEndLink: "https://github.com/Shm-Rsuf/tera-gurad-project",
+    liveLink: "https://proxima-client.netlify.app",
+    frontEndLink: "https://github.com/Shm-Rsuf/proxima-client",
+    backEndLink: "https://github.com/Shm-Rsuf/proxima-server",
   },
 ];
 
