@@ -51,14 +51,13 @@ const data = [
       "express.js",
       "mongodb",
       "tailwind-css",
-      "jwt",
+      "jwt-authentication",
       "postman",
       "context-api",
     ],
     liveLink: "https://proxima-client.netlify.app",
     frontEndLink: "https://github.com/Shm-Rsuf/proxima-client",
     backEndLink: "https://github.com/Shm-Rsuf/proxima-server",
-    //
   },
 ];
 
