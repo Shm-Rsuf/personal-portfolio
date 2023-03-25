@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.a740b755.css",
-    "main.js": "/static/js/main.926f432e.js",
+    "main.js": "/static/js/main.1b139862.js",
     "static/media/noise.gif": "/static/media/noise.2290dc385105e3fd9a35.gif",
     "static/media/cloud.png": "/static/media/cloud.2a60f664bee6889c1d2e.png",
     "static/media/CosiAzure-Bold.ttf": "/static/media/CosiAzure-Bold.075a131a6977ad2fce57.ttf",
     "index.html": "/index.html",
     "main.a740b755.css.map": "/static/css/main.a740b755.css.map",
-    "main.926f432e.js.map": "/static/js/main.926f432e.js.map"
+    "main.1b139862.js.map": "/static/js/main.1b139862.js.map"
   },
   "entrypoints": [
     "static/css/main.a740b755.css",
-    "static/js/main.926f432e.js"
+    "static/js/main.1b139862.js"
   ]
 }
