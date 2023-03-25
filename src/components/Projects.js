@@ -58,6 +58,7 @@ const data = [
     liveLink: "https://proxima-client.netlify.app",
     frontEndLink: "https://github.com/Shm-Rsuf/proxima-client",
     backEndLink: "https://github.com/Shm-Rsuf/proxima-server",
+    //
   },
 ];
 
