@@ -15,6 +15,8 @@ const data = [
   { id: 10, title: "Gsap" },
   { id: 11, title: "Axios" },
   { id: 12, title: "Firebase" },
+  { id: 13, title: "Next.js" },
+  { id: 14, title: "SASS" },
 ];
 const Skills = () => {
   const skillItemRef = useRef([]);
