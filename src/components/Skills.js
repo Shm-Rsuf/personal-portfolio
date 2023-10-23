@@ -3,20 +3,22 @@ import { useGsapSkillItemReveal, useGsapSkillTextReveal } from "../hooks/gsap";
 import SectionTitle from "./SectionTitle";
 
 const data = [
-  { id: 1, title: "HTML" },
-  { id: 2, title: "CSS" },
-  { id: 3, title: "Bootstrap" },
-  { id: 4, title: "Tailwind CSS" },
-  { id: 5, title: "JavaScript" },
-  { id: 6, title: "React" },
-  { id: 7, title: "React-Router" },
-  { id: 8, title: "Redux" },
-  { id: 9, title: "Redux-Toolkit" },
-  { id: 10, title: "Gsap" },
-  { id: 11, title: "Axios" },
-  { id: 12, title: "Firebase" },
-  { id: 13, title: "Next.js" },
-  { id: 14, title: "SASS" },
+  { id: 1, title: "Next.js" },
+  { id: 2, title: "React" },
+  { id: 3, title: "Redux" },
+  { id: 4, title: "JavaScript" },
+  { id: 5, title: "Typescript" },
+  { id: 6, title: "TailwindCSS" },
+  { id: 7, title: "C Programming" },
+  { id: 8, title: "Firebase Auth" },
+  { id: 9, title: "C++" },
+  { id: 10, title: "Node.js" },
+  { id: 11, title: "Express.js" },
+  { id: 12, title: "Mongodb" },
+  { id: 13, title: "Prisma" },
+  { id: 14, title: "Git & GitHub" },
+  { id: 15, title: "Vercel" },
+  { id: 16, title: "Figma" },
 ];
 const Skills = () => {
   const skillItemRef = useRef([]);
