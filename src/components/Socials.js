@@ -6,7 +6,7 @@ const data = [
   { id: 2, title: "GitHub", url: "https://github.com/Shm-Rsuf" },
   { id: 3, title: "LinkedIn", url: "https://www.linkedin.com/in/shm-usuf/" },
   { id: 4, title: "Twitter", url: "https://twitter.com/shm_usuf" },
-  { id: 5, title: "Leetcode", url: "https://leetcode.com/Shm_Usuf/" },
+  { id: 5, title: "Leetcode", url: "https://leetcode.com/usuf_ali/" },
 ];
 const Socials = () => {
   const socialRef = useRef(null);

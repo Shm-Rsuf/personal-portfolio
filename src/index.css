@@ -45,11 +45,6 @@ html {
   font-size: 62.5%;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -58,6 +53,7 @@ body {
   line-height: 1.6;
   letter-spacing: 1.5px;
   word-spacing: 2.5px;
+  overflow-x: hidden;
 }
 
 .inner-cursor {

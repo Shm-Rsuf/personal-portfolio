@@ -47,7 +47,7 @@ const Project = ({ project }) => {
           </a>
           {project.backEndLink && (
             <a
-              href={project.liveLink}
+              href={project.backEndLink}
               target="_blank"
               rel="noopener noreferrer"
               className="uppercase py-4 px-8 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-50/20 duration-500"
