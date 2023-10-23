@@ -38,7 +38,7 @@ const About = () => {
             skills, make me a valuable asset to any development team.
           </p>
           <a
-            href="https://docs.google.com/document/d/1999X1u2dC9h4B2nlhbC0rBL_1y55aK_aSdfTTvsAwHQ/edit"
+            href="https://drive.google.com/file/d/1-kShfd5skxs8tuQgsZePOmCYRuwUceUa/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="uppercase py-4 px-8 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-50/20 duration-500 inline-block mt-10"
