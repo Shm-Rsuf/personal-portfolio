@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { HashLink } from "react-router-hash-link";
 import { useGsapNavLinkReveal } from "../hooks/gsap";
 
-const Navbar = ({ footerNav }) => {
+const Navbar2 = ({ footerNav }) => {
   const link1Ref = useRef(null);
   const link2Ref = useRef(null);
   const link3Ref = useRef(null);
@@ -24,16 +24,15 @@ const Navbar = ({ footerNav }) => {
   useGsapNavLinkReveal(linkArr, 2);
   return (
     <nav
-      className={`navbar flex justify-between container mx-auto ${
-        footerNav ? "mt-40" : "mt-14"
-      } uppercase`}
+      className={`navbar flex items-center justify-between container border-b-[1px]
+        border-gray-900 mx-auto h-24 ${footerNav ? "mt-40" : ""} uppercase`}
     >
       <div>
         <HashLink smooth to='#home' className='link-item' ref={link1Ref}>
           {footerNav ? "Go To Top" : "Usuf Ali"}
         </HashLink>
       </div>
-      <ul className='links flex gap-2'>
+      <ul className={`links flex gap-4 ${footerNav && "flex-col"}`}>
         <li>
           <HashLink smooth to='#home' className='link-item' ref={link2Ref}>
             Home
@@ -75,4 +74,4 @@ const Navbar = ({ footerNav }) => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
