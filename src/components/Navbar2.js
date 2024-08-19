@@ -25,16 +25,14 @@ const Navbar2 = ({ footerNav }) => {
   return (
     <nav
       className={`navbar flex items-center justify-between container border-b-[1px]
-        border-gray-900 sticky top-0 z-20 mx-auto h-20 ${
-          footerNav ? "mt-40" : ""
-        } uppercase`}
+        border-gray-900 mx-auto h-24 ${footerNav ? "mt-40" : ""} uppercase`}
     >
       <div>
         <HashLink smooth to='#home' className='link-item' ref={link1Ref}>
           {footerNav ? "Go To Top" : "Usuf Ali"}
         </HashLink>
       </div>
-      <ul className='links flex gap-2'>
+      <ul className={`links flex gap-4 ${footerNav && "flex-col"}`}>
         <li>
           <HashLink smooth to='#home' className='link-item' ref={link2Ref}>
             Home

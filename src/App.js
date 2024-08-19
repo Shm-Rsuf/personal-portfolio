@@ -6,7 +6,6 @@ import { useRef } from "react";
 import CustomCursor from "./components/CustomCursor";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 import Navbar2 from "./components/Navbar2";
 import Socials from "./components/Socials";
 
@@ -29,7 +28,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
-      <Navbar footerNav />
+      <Navbar2 footerNav />
       <Footer />
     </div>
   );
