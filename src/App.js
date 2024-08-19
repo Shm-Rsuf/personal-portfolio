@@ -1,13 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import { useSmoothScroll } from "./hooks/useSmoothScroll";
 import { useCustomCursor } from "./hooks/useCustomCursor";
+import { useSmoothScroll } from "./hooks/useSmoothScroll";
 
+import { useRef } from "react";
+import CustomCursor from "./components/CustomCursor";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar2 from "./components/Navbar2";
 import Socials from "./components/Socials";
-import CustomCursor from "./components/CustomCursor";
-import { useRef } from "react";
 
 const App = () => {
   const innerCursorRef = useRef(null);
@@ -17,16 +18,16 @@ const App = () => {
   useCustomCursor(innerCursorRef, outerCursorRef);
 
   return (
-    <div className="app">
-      <div className="noise"></div>
+    <div className='app'>
+      <div className='noise'></div>
       <CustomCursor
         innerCursorRef={innerCursorRef}
         outerCursorRef={outerCursorRef}
       />
-      <Navbar />
+      <Navbar2 />
       <Socials />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<Home />} />
       </Routes>
       <Navbar footerNav />
       <Footer />
