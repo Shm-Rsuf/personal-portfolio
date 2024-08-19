@@ -24,11 +24,17 @@ const Navbar2 = ({ footerNav }) => {
   useGsapNavLinkReveal(linkArr, 2);
   return (
     <nav
-      className={`navbar flex items-center justify-between container border-b-[1px]
-        border-gray-900 mx-auto h-24 ${footerNav ? "mt-40" : ""} uppercase`}
+      className={`navbar flex items-center justify-between container  mx-auto h-24 ${
+        footerNav ? "mt-40" : "border-b-[1px] border-gray-900"
+      } uppercase`}
     >
       <div>
-        <HashLink smooth to='#home' className='link-item' ref={link1Ref}>
+        <HashLink
+          smooth
+          to={footerNav ? "#home" : "/"}
+          className='link-item'
+          ref={link1Ref}
+        >
           {footerNav ? "Go To Top" : "Usuf Ali"}
         </HashLink>
       </div>
@@ -60,6 +66,7 @@ const Navbar2 = ({ footerNav }) => {
         </li>
         <li>
           <a
+            title='download resume'
             href='https://drive.google.com/file/d/1-kShfd5skxs8tuQgsZePOmCYRuwUceUa/view?usp=sharing'
             target='_blank'
             rel='noopener noreferrer'
