@@ -82,7 +82,7 @@ const Contact = () => {
           <input
             type='submit'
             value='send message'
-            className=' py-8 px-16 border border-cyan-500 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500 w-full uppercase cursor-pointer'
+            className=' py-8 px-16 border border-cyan-500 rounded-full hover:bg-hover-color hover:text-gray-900 duration-500 w-full uppercase cursor-pointer'
           />
         </div>
       </form>
