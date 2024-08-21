@@ -12,6 +12,7 @@
 :root {
   --color-dark: #050505;
   --color-light: #f7f7ff;
+  --hover-color: #22d3ee;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -118,7 +119,7 @@ input[type="submit"] {
 
 .link-item::after {
   content: "";
-  background-color: var(--color-light);
+  background-color: var(--hover-color);
   position: absolute;
   width: 0%;
   height: 1px;
